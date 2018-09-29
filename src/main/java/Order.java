@@ -4,7 +4,7 @@ public class Order {
     private String orderId;
     private String address;
     private Date orderTime;
-    private Dishes[] orderDishes;
+    private OrderDishes[] orderDishes;
     private double totalAmount;
 
     public String getOrderId() {
@@ -31,11 +31,11 @@ public class Order {
         this.orderTime = orderTime;
     }
 
-    public Dishes[] getOrderDishes() {
+    public OrderDishes[] getOrderDishes() {
         return orderDishes;
     }
 
-    public void setOrderDishes(Dishes[] orderDishes) {
+    public void setOrderDishes(OrderDishes[] orderDishes) {
         this.orderDishes = orderDishes;
     }
 
