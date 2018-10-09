@@ -29,9 +29,9 @@ public class OrderApplication {
         } catch (NoAddressException e) {
             System.out.println("请输入收货地市");
             initAddress(orderService);
-            try{
+            try {
                 order = orderService.createOrder(orderDishes);
-            }catch (NoAddressException e1){
+            } catch (NoAddressException e1) {
                 e1.printStackTrace();
             }
         }
@@ -45,7 +45,6 @@ public class OrderApplication {
         try {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             str = bufferedReader.readLine();
-
         } catch (IOException e) {
 
         }
