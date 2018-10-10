@@ -4,14 +4,22 @@ import tech.bmatch.meituan.model.Merchant;
 import tech.bmatch.meituan.model.MerchantSearchParam;
 import tech.bmatch.meituan.service.MerchantService;
 import tech.bmatch.meituan.service.impl.MerchantServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
+
 public class Application {
-    private static MerchantService merchantService = new MerchantServiceImpl();
+
+    private static final Logger logger = LoggerFactory.getLogger(Application.class);
+
+    //private static MerchantService merchantService = new MerchantServiceImpl();
+    public static MerchantService merchantService = new MerchantServiceImpl();
 
     public static void main(String[] args) {
         /*init();
@@ -29,11 +37,13 @@ public class Application {
         }*/
         merchantService.init();
 
+
         BufferedReader bufferedReader = new BufferedReader(
                 new InputStreamReader(System.in));
         System.out.println("请输入指令");
         System.out.println("添加商家的指令 add 商户ID 商户名称 经度 纬度");
         System.out.println("查询商家的指令 search 商户名称[可选]");
+        System.out.println("查询所有商家的指令 show all");
 
         while (true) {
             String command = null;
@@ -50,11 +60,13 @@ public class Application {
                     String content = command.replaceAll("search ", "");
                     search(content);
                 }
+                if (command.startsWith("show all")){
+                    showAllMerchants();
+                }
+
             } catch (IOException e) {
-                e.printStackTrace();
+                logger.error("",e);
             }
-
-
         }
 
     }
@@ -67,7 +79,7 @@ public class Application {
         merchant.setLat(Double.valueOf(items[3]));
 
         merchantService.add(merchant);
-        System.out.println("添加数据成功");
+
     }
 
     private static void search(String name){
@@ -85,6 +97,10 @@ public class Application {
             System.out.println("距离："+distance.intValue()+"m");
             System.out.println("------------------");
         }
+    }
+
+    private static void showAllMerchants(){
+        merchantService.read();
     }
 
   /*  public static void init() {

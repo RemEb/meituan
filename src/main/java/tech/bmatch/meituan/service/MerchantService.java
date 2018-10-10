@@ -17,4 +17,5 @@ public interface MerchantService {
     /*根据经纬度搜索商家*/
     public List<Merchant> search(MerchantSearchParam param);
 
+    void read();
 }

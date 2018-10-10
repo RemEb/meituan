@@ -10,30 +10,21 @@
       <change afterPath="$PROJECT_DIR$/../hellojava/src/main/java/Test.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../javafirst/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../javafirst/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AbstractPayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AliPayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PayServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WeixinPayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/model/Merchant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/model/MerchantSearchParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/MerchantService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantFileStoreServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/util/DistanceUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Log4j2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/JunitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Merchant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OrderApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Dishes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dishes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Merchant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NoAddressException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NoAddressException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/OrderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/OrderApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/OrderDishes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/OrderDishes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/MerchantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/MerchantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantFileStoreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantFileStoreServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/bmatch/meituan/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/bmatch/meituan/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/bmatch/meituan/service/MerchantService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/bmatch/meituan/service/MerchantService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/bmatch/meituan/service/impl/MerchantFileStoreServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/bmatch/meituan/service/impl/MerchantFileStoreServiceImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/bmatch/meituan/service/impl/MerchantFileStoreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/bmatch/meituan/service/impl/MerchantFileStoreServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/bmatch/meituan/service/impl/MerchantServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/bmatch/meituan/service/impl/MerchantServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,49 +38,52 @@
     <session id="745660919">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.29" value="3" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="2" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="30" />
-          <entry key="json" value="1" />
-          <entry key="xml" value="1" />
+          <entry key="java" value="39" />
+          <entry key="json" value="3" />
+          <entry key="log" value="1" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="30" />
-          <entry key="JSON" value="1" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="39" />
+          <entry key="JSON" value="3" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6067" />
+          <entry key="java" value="7337" />
           <entry key="json" value="103" />
-          <entry key="xml" value="146" />
+          <entry key="xml" value="499" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6067" />
+          <entry key="JAVA" value="7337" />
           <entry key="JSON" value="103" />
-          <entry key="XML" value="146" />
+          <entry key="XML" value="499" />
         </counts>
       </usages-collector>
     </session>
@@ -97,84 +91,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/model/Merchant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-              <folding>
-                <element signature="e#249#250#0" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
-                <element signature="e#337#338#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/MerchantService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantFileStoreServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1432#1433#0" expanded="true" />
-                <element signature="e#1459#1460#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="662">
-              <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/model/MerchantSearchParam.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/util/DistanceUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-              <folding>
-                <element signature="e#103#104#0" expanded="true" />
-                <element signature="e#143#144#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
+            <state relative-caret-position="676">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,30 +103,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data.json">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="51" selection-start-column="51" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/FileTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+            <state relative-caret-position="380">
+              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
               <folding>
-                <element signature="e#86#87#0" expanded="true" />
-                <element signature="e#135#136#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1990#1991#0" expanded="true" />
+                <element signature="e#2018#2019#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meituan.iml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3374#3375#0" expanded="true" />
+                <element signature="e#3412#3413#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="134" selection-start-column="134" selection-end-column="134" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/MerchantService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -218,6 +160,12 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>try</find>
+      <find>catch</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -246,12 +194,16 @@
         <option value="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/model/Merchant.java" />
         <option value="$PROJECT_DIR$/src/main/java/FileTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/model/MerchantSearchParam.java" />
+        <option value="$PROJECT_DIR$/src/log4j2.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Log4j2Test.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/JunitTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/MerchantService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantFileStoreServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantFileStoreServiceImpl.java" />
         <option value="$PROJECT_DIR$/data.json" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -273,8 +225,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="208" />
-    <option name="y" value="13" />
+    <option name="x" value="622" />
+    <option name="y" value="28" />
     <option name="width" value="1291" />
     <option name="height" value="1041" />
   </component>
@@ -287,7 +239,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,6 +249,11 @@
             <path>
               <item name="meituan" type="b2602c69:ProjectViewProjectNode" />
               <item name="meituan" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meituan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meituan" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -339,17 +295,6 @@
               <item name="tech" type="462c0819:PsiDirectoryNode" />
               <item name="bmatch" type="462c0819:PsiDirectoryNode" />
               <item name="meituan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="meituan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meituan" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tech" type="462c0819:PsiDirectoryNode" />
-              <item name="bmatch" type="462c0819:PsiDirectoryNode" />
-              <item name="meituan" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="meituan" type="b2602c69:ProjectViewProjectNode" />
@@ -377,26 +322,34 @@
             <path>
               <item name="meituan" type="b2602c69:ProjectViewProjectNode" />
               <item name="meituan" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539089050382" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539177900864" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../hellojava" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\Java\meituan\src\main\resources" />
+      <recent name="D:\Code\Java\meituan\src\resource" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -424,45 +377,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DistanceUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tech.bmatch.meituan.util.DistanceUtil" />
-      <module name="meituan" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tech.bmatch.meituan.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OrderApplication" />
+    <configuration name="Log4j2Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Log4j2Test" />
       <module name="meituan" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PayServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PayServiceTest" />
+    <configuration name="JunitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="meituan" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JunitTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JunitTest.testInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="meituan" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JunitTest" />
+      <option name="METHOD_NAME" value="testInt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JunitTest.testStr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="meituan" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JunitTest" />
+      <option name="METHOD_NAME" value="testStr" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.OrderApplication" />
-      <item itemvalue="Application.PayServiceTest" />
       <item itemvalue="Application.Application" />
-      <item itemvalue="Application.DistanceUtil" />
+      <item itemvalue="Application.Log4j2Test" />
+      <item itemvalue="JUnit.JunitTest.testStr" />
+      <item itemvalue="JUnit.JunitTest" />
+      <item itemvalue="JUnit.JunitTest.testInt" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
-        <item itemvalue="Application.DistanceUtil" />
-        <item itemvalue="Application.PayServiceTest" />
-        <item itemvalue="Application.OrderApplication" />
+        <item itemvalue="JUnit.JunitTest.testInt" />
+        <item itemvalue="JUnit.JunitTest" />
+        <item itemvalue="JUnit.JunitTest.testStr" />
+        <item itemvalue="Application.Log4j2Test" />
       </list>
     </recent_temporary>
   </component>
@@ -487,12 +450,26 @@
       <workItem from="1538558544956" duration="5221000" />
       <workItem from="1538652811608" duration="10116000" />
       <workItem from="1539075349228" duration="11135000" />
-      <workItem from="1539087176157" duration="1868000" />
+      <workItem from="1539087176157" duration="2756000" />
+      <workItem from="1539161406176" duration="805000" />
+      <workItem from="1539166663526" duration="8047000" />
+      <workItem from="1539174894604" duration="2985000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="JunitTest - 2018.10.10 at 19h 43m 34s.xml">
+      <configuration name="JunitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JunitTest_testInt - 2018.10.10 at 19h 45m 10s.xml">
+      <configuration name="JunitTest.testInt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JunitTest_testInt - 2018.10.10 at 19h 45m 24s.xml">
+      <configuration name="JunitTest.testInt" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42474000" />
+    <option name="totallyTimeSpent" value="55199000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -505,8 +482,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23187633" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22441365" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -515,16 +493,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4988938" weight="0.3289183" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5170576" visible="true" weight="0.23060109" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.51585627" visible="true" weight="0.2273224" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.58243245" weight="0.397351" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3299712" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289183" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.26913264" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.48294243" side_tool="true" visible="true" weight="0.23060109" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4989339" weight="0.26821193" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.48414376" side_tool="true" weight="0.22958058" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.48933902" weight="0.32568306" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.48783785" weight="0.124590166" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -661,14 +639,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_144/jre/lib/rt.jar!/sun/misc/FloatingDecimal.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FileTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+          <folding>
+            <element signature="e#86#87#0" expanded="true" />
+            <element signature="e#135#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meituan.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/model/Merchant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="235">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
+            <element signature="e#218#219#0" expanded="true" />
             <element signature="e#249#250#0" expanded="true" />
             <element signature="e#297#298#0" expanded="true" />
             <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/root.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/util/DistanceUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding>
+            <element signature="e#103#104#0" expanded="true" />
+            <element signature="e#143#144#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -680,81 +713,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/util/DistanceUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/JunitTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        <state relative-caret-position="323">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="18" selection-end-column="9" />
           <folding>
-            <element signature="e#103#104#0" expanded="true" />
-            <element signature="e#143#144#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meituan.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Log4j2Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FileTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding>
-            <element signature="e#86#87#0" expanded="true" />
-            <element signature="e#135#136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_144/jre/lib/rt.jar!/sun/misc/FloatingDecimal.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantFileStoreServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="676">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1459#1460#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/MerchantService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
+        <state relative-caret-position="361">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -764,7 +758,31 @@
     <entry file="file://$PROJECT_DIR$/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="51" selection-start-column="51" selection-end-column="51" />
+          <caret column="134" selection-start-column="134" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#3412#3413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/bmatch/meituan/service/impl/MerchantServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1990#1991#0" expanded="true" />
+            <element signature="e#2018#2019#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

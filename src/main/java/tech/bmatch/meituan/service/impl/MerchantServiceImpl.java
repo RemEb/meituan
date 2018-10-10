@@ -1,5 +1,8 @@
 package tech.bmatch.meituan.service.impl;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import tech.bmatch.meituan.Application;
 import tech.bmatch.meituan.model.Merchant;
 import tech.bmatch.meituan.model.MerchantSearchParam;
 import tech.bmatch.meituan.service.MerchantService;
@@ -16,6 +19,8 @@ import java.util.stream.Stream;
 public class MerchantServiceImpl extends MerchantFileStoreServiceImpl {
 
     private Map<String, Merchant> merchants;
+    private static final Logger logger = LoggerFactory.getLogger(MerchantServiceImpl.class);
+
 
     public void add(Merchant merchant) {
         // 初始化merchants
@@ -26,6 +31,16 @@ public class MerchantServiceImpl extends MerchantFileStoreServiceImpl {
         if (merchant == null) {
             return;
         }
+        //检验有没有相同merchant
+        for (Map.Entry<String, Merchant> merchantEntry : merchants.entrySet()) {
+            Merchant merchant1 = merchantEntry.getValue();
+            if (merchant1.getName().equals(merchant.getName()) || merchant1.getId().equals(merchant.getId())) {
+                System.out.println("已相同店家或者ID重复，请重新输入");
+                return;
+            }
+
+        }
+
         // 往map中添加数据
         merchants.put(merchant.getId(), merchant);
 
@@ -58,4 +73,11 @@ public class MerchantServiceImpl extends MerchantFileStoreServiceImpl {
 
         return stream.collect(Collectors.toList());
     }
+
+    @Override
+    public void read() {
+        super.read();
+    }
+
+
 }
