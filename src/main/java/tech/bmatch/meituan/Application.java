@@ -100,7 +100,12 @@ public class Application {
     }
 
     private static void showAllMerchants(){
-        merchantService.read();
+        MerchantSearchParam param = new MerchantSearchParam();
+
+        param.setLon(120.560148);
+        param.setLat(31.421065);
+
+        merchantService.read(param);
     }
 
   /*  public static void init() {

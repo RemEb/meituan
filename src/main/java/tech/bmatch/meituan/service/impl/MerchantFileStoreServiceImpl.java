@@ -7,11 +7,13 @@ import tech.bmatch.meituan.model.MerchantSearchParam;
 import tech.bmatch.meituan.service.MerchantService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import tech.bmatch.meituan.util.DistanceUtil;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 
 public abstract class MerchantFileStoreServiceImpl
@@ -50,10 +52,18 @@ public abstract class MerchantFileStoreServiceImpl
         }
     }
 
-    public void read(){
+    public void read(MerchantSearchParam param){
         try {
             List<Merchant> merchantList = objectMapper.readValue(file,
                     new TypeReference<List<Merchant>>(){});
+
+            for (Merchant merchant : merchantList) {
+                Double distance = DistanceUtil.getDistance(param.getLon(), param.getLat(),
+                        merchant.getLon(), merchant.getLat());
+                merchant.setDistance(distance);
+            }
+
+
             for (Merchant merchant : merchantList) {
                 System.out.println("商家 ："+merchant.getName());
                 Double distance = merchant.getDistance();

@@ -1,5 +1,6 @@
 package tech.bmatch.meituan.service.impl;
 
+import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import tech.bmatch.meituan.Application;
@@ -21,7 +22,7 @@ public class MerchantServiceImpl extends MerchantFileStoreServiceImpl {
     private Map<String, Merchant> merchants;
     private static final Logger logger = LoggerFactory.getLogger(MerchantServiceImpl.class);
 
-
+    @Test
     public void add(Merchant merchant) {
         // 初始化merchants
         if (merchants == null) {

@@ -11,11 +11,11 @@ import java.util.List;
 * */
 
 public interface MerchantService {
-    public  void init();
+    void init();
     /*添加商户*/
-    public void add(Merchant merchant);
+    void add(Merchant merchant);
     /*根据经纬度搜索商家*/
-    public List<Merchant> search(MerchantSearchParam param);
+    List<Merchant> search(MerchantSearchParam param);
 
-    void read();
+    void read(MerchantSearchParam param);
 }
