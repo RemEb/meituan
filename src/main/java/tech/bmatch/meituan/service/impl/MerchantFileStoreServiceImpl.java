@@ -12,13 +12,10 @@ import tech.bmatch.meituan.util.DistanceUtil;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /**
  * 实现商家初始化、保存、读取的功能
- *
  * @author Lcy
  * @data 2018年10月11日
  */

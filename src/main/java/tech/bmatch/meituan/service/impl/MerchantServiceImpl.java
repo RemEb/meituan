@@ -12,8 +12,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * 商家服务类实现，处理增加、查询的功能
- *
+ * 商家服务类实现，处理增加商家、查询商家、增加菜品的功能
  * @author lcy
  * @data 2018年10月11日
  */

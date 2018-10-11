@@ -13,7 +13,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
-
+/**
+ * Application类，各功能整合使用。
+ * @author lcy
+ * @data 2018年10月11日 18:13:03*/
 
 public class Application {
 

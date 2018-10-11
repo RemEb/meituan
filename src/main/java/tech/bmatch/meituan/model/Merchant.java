@@ -2,6 +2,8 @@ package tech.bmatch.meituan.model;
 
 /**
  * 商家类 有id、名字、经度、纬度、距离、菜品
+ * @author lcy
+ * @data 2018年10月11日 18:13:24
  */
 public class Merchant {
     private String id;

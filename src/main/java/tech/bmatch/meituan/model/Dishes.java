@@ -1,4 +1,10 @@
 package tech.bmatch.meituan.model;
+/**
+ * 菜品类，有名称，价格，对应商品ID
+ * @author lcy
+ * @data 2018年10月11日 18:14:09
+ * */
+
 
 public class Dishes {
     private String name;

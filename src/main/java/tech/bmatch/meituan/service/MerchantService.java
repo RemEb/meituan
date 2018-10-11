@@ -7,8 +7,8 @@ import tech.bmatch.meituan.model.MerchantSearchParam;
 import java.util.List;
 
 /**
-* 商家服务
-*@author Lcy
+ * 商家服务接口
+ * @author Lcy
  * @data 2018年10月11日 16:30:50
  * */
 
