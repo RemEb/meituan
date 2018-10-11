@@ -1,5 +1,6 @@
 package tech.bmatch.meituan;
 
+import tech.bmatch.meituan.model.Dishes;
 import tech.bmatch.meituan.model.Merchant;
 import tech.bmatch.meituan.model.MerchantSearchParam;
 import tech.bmatch.meituan.service.MerchantService;
@@ -17,9 +18,8 @@ import java.util.List;
 public class Application {
 
     private static final Logger logger = LoggerFactory.getLogger(Application.class);
-
-    //private static MerchantService merchantService = new MerchantServiceImpl();
     public static MerchantService merchantService = new MerchantServiceImpl();
+
 
     public static void main(String[] args) {
         /*init();
@@ -43,6 +43,8 @@ public class Application {
         System.out.println("请输入指令");
         System.out.println("添加商家的指令 add 商户ID 商户名称 经度 纬度");
         System.out.println("查询商家的指令 search 商户名称[可选]");
+        System.out.println("添加商家菜品的指令 addDish 商户ID 菜品名称 菜品价格");
+        System.out.println("查询商家菜品的指令 showDish 商户ID");
         System.out.println("查询所有商家的指令 show all");
 
         while (true) {
@@ -60,12 +62,21 @@ public class Application {
                     String content = command.replaceAll("search ", "");
                     search(content);
                 }
-                if (command.startsWith("show all")){
+                if (command.startsWith("show all")) {
                     showAllMerchants();
+                }
+                if (command.startsWith("addDish ")) {
+                    String content = command.replaceAll("addDish ", "");
+                    String[] items = content.split(" ");
+                    initMerchantDish(items);
+                }
+                if (command.startsWith("showDish ")) {
+                    String content = command.replaceAll("addDish ", "");
+                    showMerchantDishes(content);
                 }
 
             } catch (IOException e) {
-                logger.error("",e);
+                logger.error("", e);
             }
         }
 
@@ -79,10 +90,18 @@ public class Application {
         merchant.setLat(Double.valueOf(items[3]));
 
         merchantService.add(merchant);
-
     }
 
-    private static void search(String name){
+    private static void initMerchantDish(String[] items) {
+        Dishes dish =new Dishes();
+        dish.setMerchantId(items[0]);
+        dish.setName(items[1]);
+        dish.setPrice(Double.valueOf(items[2]));
+
+        merchantService.addDishes(dish);
+    }
+
+    private static void search(String name) {
         MerchantSearchParam param = new MerchantSearchParam();
 
         param.setLon(120.560148);
@@ -92,20 +111,24 @@ public class Application {
         List<Merchant> merchantList = merchantService.search(param);
 
         for (Merchant merchant : merchantList) {
-            System.out.println("商家："+merchant.getName());
+            System.out.println("商家：" + merchant.getName());
             Double distance = merchant.getDistance();
-            System.out.println("距离："+distance.intValue()+"m");
+            System.out.println("距离：" + distance.intValue() + "m");
             System.out.println("------------------");
         }
     }
 
-    private static void showAllMerchants(){
+    private static void showAllMerchants() {
         MerchantSearchParam param = new MerchantSearchParam();
 
         param.setLon(120.560148);
         param.setLat(31.421065);
 
         merchantService.read(param);
+    }
+
+    private static void showMerchantDishes(String id){
+
     }
 
   /*  public static void init() {

@@ -2,19 +2,21 @@ package tech.bmatch.meituan.service.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import tech.bmatch.meituan.Application;
+import tech.bmatch.meituan.model.Dishes;
 import tech.bmatch.meituan.model.Merchant;
 import tech.bmatch.meituan.model.MerchantSearchParam;
-import tech.bmatch.meituan.service.MerchantService;
 import tech.bmatch.meituan.util.DistanceUtil;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * 商家服务类实现，处理增加、查询的功能
+ *
+ * @author lcy
+ * @data 2018年10月11日
+ */
 
 public class MerchantServiceImpl extends MerchantFileStoreServiceImpl {
 
@@ -75,9 +77,35 @@ public class MerchantServiceImpl extends MerchantFileStoreServiceImpl {
     }
 
     @Override
-    public void read(MerchantSearchParam param) {
-        super.read(param);
-    }
+    public void addDishes(Dishes dish) {
+        List<Merchant> merchantList = new ArrayList<Merchant>();
+        List<Dishes> dishesList = new ArrayList<Dishes>();
+        Dishes[] dishes1 = new Dishes[1];
 
+        for (Map.Entry<String, Merchant> merchantEntry : merchants.entrySet()) {
+            Merchant merchant = merchantEntry.getValue();
+            if (merchant.getId().equals(dish.getMerchantId())) {
+                Dishes[] dishes = merchant.getDishes();
+
+                if (dishes == null) {
+                    dishes1[0] = dish;
+                    merchant.setDishes(dishes1);
+                } else {
+                    for (int i = 0; i < dishes.length; i++) {
+                        if (dishes[i].getName().equals(dish.getName())){
+                            System.out.println("已经有重复菜品。");
+                            return;
+                        }
+                        dishesList.add(dishes[i]);
+                    }
+                    //dishesList=Arrays.asList(dishes);
+                    dishesList.add(dish);
+                    merchant.setDishes(dishesList.toArray(dishes));
+                }
+            }
+            merchantList.add(merchant);
+        }
+        store(merchantList);
+    }
 
 }

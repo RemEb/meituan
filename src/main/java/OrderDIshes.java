@@ -1,3 +1,5 @@
+import tech.bmatch.meituan.model.Dishes;
+
 public class OrderDishes {
     private int count;
     private Dishes dishes;

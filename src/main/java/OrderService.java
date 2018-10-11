@@ -1,7 +1,11 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+/**
+ * 订单服务实现设置地址、确认订单、支付的功能
+ * @author lcy
+ * @data 2018年10月11日 13:13:20
+ * */
 
 public class OrderService {
     private String address;

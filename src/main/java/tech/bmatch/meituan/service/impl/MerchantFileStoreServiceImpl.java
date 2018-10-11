@@ -2,6 +2,7 @@ package tech.bmatch.meituan.service.impl;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import tech.bmatch.meituan.model.Dishes;
 import tech.bmatch.meituan.model.Merchant;
 import tech.bmatch.meituan.model.MerchantSearchParam;
 import tech.bmatch.meituan.service.MerchantService;
@@ -15,9 +16,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 实现商家初始化、保存、读取的功能
+ *
+ * @author Lcy
+ * @data 2018年10月11日
+ */
 
-public abstract class MerchantFileStoreServiceImpl
-    implements MerchantService{
+public abstract class MerchantFileStoreServiceImpl implements MerchantService {
 
     private static ObjectMapper objectMapper = new ObjectMapper();
     private static File file = new File("./data.json");
@@ -25,37 +31,39 @@ public abstract class MerchantFileStoreServiceImpl
 
     @Override
     public void init() {
-        if (!file.exists()){
+        if (!file.exists()) {
             return;
         }
         try {
             List<Merchant> merchantList = objectMapper.readValue(file,
-                    new TypeReference<List<Merchant>>(){});
+                    new TypeReference<List<Merchant>>() {
+                    });
             for (Merchant merchant : merchantList) {
                 add(merchant);
             }
-        }catch (IOException e){
-            logger.error("",e);
+        } catch (IOException e) {
+            logger.error("", e);
 
         }
     }
 
-    public void store(List<Merchant> merchants){
+    public void store(List<Merchant> merchants) {
         if (merchants == null) {
             return;
         }
         try {
-            objectMapper.writeValue(file,merchants);
+            objectMapper.writeValue(file, merchants);
             logger.info("添加数据成功");
-        }catch (IOException e){
-            logger.error("",e);
+        } catch (IOException e) {
+            logger.error("", e);
         }
     }
 
-    public void read(MerchantSearchParam param){
+    public void read(MerchantSearchParam param) {
         try {
             List<Merchant> merchantList = objectMapper.readValue(file,
-                    new TypeReference<List<Merchant>>(){});
+                    new TypeReference<List<Merchant>>() {
+                    });
 
             for (Merchant merchant : merchantList) {
                 Double distance = DistanceUtil.getDistance(param.getLon(), param.getLat(),
@@ -63,25 +71,24 @@ public abstract class MerchantFileStoreServiceImpl
                 merchant.setDistance(distance);
             }
 
-
             for (Merchant merchant : merchantList) {
-                System.out.println("商家 ："+merchant.getName());
+                System.out.println("商家 ：" + merchant.getName());
                 Double distance = merchant.getDistance();
-                System.out.println("距离 ："+distance.intValue()+"m");
+                System.out.println("距离 ：" + distance.intValue() + "m");
+                System.out.println("菜单 :");
+                Dishes[] dishes = merchant.getDishes();
+                if (dishes == null) {
+                    System.out.println("  还没有菜品。。");
+                } else {
+                    for (Dishes dish : dishes) {
+                        System.out.println("  名称：" + dish.getName() + " 价格:" + dish.getPrice()+"元");
+                    }
+                }
                 System.out.println("------------------");
             }
         } catch (IOException e) {
-            logger.error("",e);
+            logger.error("", e);
         }
     }
 
-    @Override
-    public void add(Merchant merchant) {
-
-    }
-
-    @Override
-    public List<Merchant> search(MerchantSearchParam param) {
-        return null;
-    }
 }

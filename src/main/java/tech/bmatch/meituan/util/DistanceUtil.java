@@ -1,5 +1,9 @@
 package tech.bmatch.meituan.util;
-
+/**
+ * 计算两点间的距离
+ * @author lcy
+ * @data 2018年10月11日
+ * */
 public class DistanceUtil {
     private static double rad(double d) {
         return d * Math.PI / 180;

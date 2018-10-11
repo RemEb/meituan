@@ -1,11 +1,15 @@
 package tech.bmatch.meituan.model;
 
+/**
+ * 商家类 有id、名字、经度、纬度、距离、菜品
+ */
 public class Merchant {
     private String id;
     private String name;
     private double lon;
     private double lat;
     private double distance;
+    private Dishes[] dishes;
 
     public double getDistance() {
         return distance;
@@ -45,5 +49,13 @@ public class Merchant {
 
     public void setLat(double lat) {
         this.lat = lat;
+    }
+
+    public Dishes[] getDishes() {
+        return dishes;
+    }
+
+    public void setDishes(Dishes[] dishes) {
+        this.dishes = dishes;
     }
 }
