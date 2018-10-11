@@ -1,5 +1,7 @@
 package tech.bmatch.meituan.model;
 
+import java.util.List;
+
 /**
  * 商家类 有id、名字、经度、纬度、距离、菜品
  * @author lcy
@@ -11,7 +13,7 @@ public class Merchant {
     private double lon;
     private double lat;
     private double distance;
-    private Dishes[] dishes;
+    private List<Dishes> dishes;
 
     public double getDistance() {
         return distance;
@@ -53,11 +55,11 @@ public class Merchant {
         this.lat = lat;
     }
 
-    public Dishes[] getDishes() {
+    public List<Dishes> getDishes() {
         return dishes;
     }
 
-    public void setDishes(Dishes[] dishes) {
+    public void setDishes(List<Dishes> dishes) {
         this.dishes = dishes;
     }
 }

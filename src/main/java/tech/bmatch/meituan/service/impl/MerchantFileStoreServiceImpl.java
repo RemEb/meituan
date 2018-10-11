@@ -73,7 +73,7 @@ public abstract class MerchantFileStoreServiceImpl implements MerchantService {
                 Double distance = merchant.getDistance();
                 System.out.println("距离 ：" + distance.intValue() + "m");
                 System.out.println("菜单 :");
-                Dishes[] dishes = merchant.getDishes();
+                List<Dishes> dishes = merchant.getDishes();
                 if (dishes == null) {
                     System.out.println("  还没有菜品。。");
                 } else {

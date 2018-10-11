@@ -23,8 +23,11 @@ public class MerchantServiceImpl extends MerchantFileStoreServiceImpl {
     private static final Logger logger = LoggerFactory.getLogger(MerchantServiceImpl.class);
 
 
+
     public void add(Merchant merchant) {
-        // 初始化merchants
+        /**
+         * 初始化merchants
+         */
         if (merchants == null) {
             merchants = new HashMap<String, Merchant>();
         }
@@ -42,7 +45,9 @@ public class MerchantServiceImpl extends MerchantFileStoreServiceImpl {
 
         }
 
-        // 往map中添加数据
+        /**
+         * 往map中添加数据
+          */
         merchants.put(merchant.getId(), merchant);
 
         List<Merchant> merchantList = merchants.values().stream().collect(Collectors.toList());
@@ -79,27 +84,26 @@ public class MerchantServiceImpl extends MerchantFileStoreServiceImpl {
     public void addDishes(Dishes dish) {
         List<Merchant> merchantList = new ArrayList<Merchant>();
         List<Dishes> dishesList = new ArrayList<Dishes>();
-        Dishes[] dishes1 = new Dishes[1];
+
 
         for (Map.Entry<String, Merchant> merchantEntry : merchants.entrySet()) {
             Merchant merchant = merchantEntry.getValue();
             if (merchant.getId().equals(dish.getMerchantId())) {
-                Dishes[] dishes = merchant.getDishes();
+                dishesList = merchant.getDishes();
 
-                if (dishes == null) {
-                    dishes1[0] = dish;
-                    merchant.setDishes(dishes1);
+                if (dishesList == null) {
+                    dishesList = new ArrayList<Dishes>();
+                    dishesList.add(dish);
+                    merchant.setDishes(dishesList);
                 } else {
-                    for (int i = 0; i < dishes.length; i++) {
-                        if (dishes[i].getName().equals(dish.getName())){
+                    for (int i = 0; i < dishesList.size(); i++) {
+                        if (dishesList.get(i).getName().equals(dish.getName())){
                             System.out.println("已经有重复菜品。");
                             return;
                         }
-                        dishesList.add(dishes[i]);
                     }
-                    //dishesList=Arrays.asList(dishes);
                     dishesList.add(dish);
-                    merchant.setDishes(dishesList.toArray(dishes));
+                    merchant.setDishes(dishesList);
                 }
             }
             merchantList.add(merchant);

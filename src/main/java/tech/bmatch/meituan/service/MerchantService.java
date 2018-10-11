@@ -13,15 +13,29 @@ import java.util.List;
  * */
 
 public interface MerchantService {
-    /*初始化商家*/
+    /**
+     * 初始化商家
+     */
     void init();
-    /*添加商户*/
+
+    /**
+     * 添加商家
+     */
     void add(Merchant merchant);
-    /*根据经纬度搜索商家*/
+
+    /**
+     * 根据经纬度搜索商家
+     */
     List<Merchant> search(MerchantSearchParam param);
-    /*读取商家数据*/
+
+    /**
+     * 读取商家数据
+     */
     void read(MerchantSearchParam param);
-    /*添加菜品*/
+
+    /**
+     * 添加菜品
+     */
     void addDishes(Dishes dish);
 
 }
