@@ -42,12 +42,11 @@ public class MerchantServiceImpl extends MerchantFileStoreServiceImpl {
                 System.out.println("已相同店家或者ID重复，请重新输入");
                 return;
             }
-
         }
 
         /**
          * 往map中添加数据
-          */
+         */
         merchants.put(merchant.getId(), merchant);
 
         List<Merchant> merchantList = merchants.values().stream().collect(Collectors.toList());
@@ -69,8 +68,7 @@ public class MerchantServiceImpl extends MerchantFileStoreServiceImpl {
         Stream<Merchant> stream = merchantList.stream();
 
         if (param.getName() != null && !param.getName().equals("")) {
-            stream = stream.filter(m ->
-                    m.getName().indexOf(param.getName()) >= 0);
+            stream = stream.filter(m -> m.getName().indexOf(param.getName()) >= 0);
         }
 
         stream = stream.sorted((m1, m2) ->
